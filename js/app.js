@@ -28,6 +28,9 @@ $(document).ready(function() {
 
           $taskBtn.on('click', function() {
             console.log('click 4');
+            $taskBtn.hide();
+            $('#form').append('<input type="text" class="add-focus"><p class="lead"><button type="button" class="btn btn-success add-task-btn">Añadir</button></p>');
+            $('.add-focus').focus();
           });
         });
       });
